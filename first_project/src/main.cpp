@@ -14,7 +14,7 @@ int main() {
 
     std::cout << "Enter you age, with numbers\n";
 
-    int age; // Initializes age in "0"
+    int age;
 
     // Character in "age", which is a number
     // Validates if cin failed
