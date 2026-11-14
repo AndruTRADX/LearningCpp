@@ -3,5 +3,4 @@ project(first_project)
 
 set(CMAKE_CXX_STANDARD 26)
 
-add_executable(first_project src/main.cpp
-        ../playground/src/main.cpp)
+add_executable(first_project src/main.cpp)
