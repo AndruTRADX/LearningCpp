@@ -1,4 +1,7 @@
 cmake_minimum_required(VERSION 4.4)
+
+set(CMAKE_CXX_SCAN_FOR_MODULES OFF)
+
 project(LearnCpp LANGUAGES CXX)
 
 # Todos los ejecutables van directo a la carpeta de build (cmake-build-debug)

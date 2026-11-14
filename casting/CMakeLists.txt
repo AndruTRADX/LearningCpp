@@ -3,4 +3,6 @@ project(casting)
 
 set(CMAKE_CXX_STANDARD 26)
 
-add_executable(casting src/main.cpp)
+add_executable(casting src/main.cpp
+        ../us_currency_chlg/src/main.cpp
+)
