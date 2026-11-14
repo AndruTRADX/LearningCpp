@@ -12,22 +12,20 @@ int main() {
     constexpr int quarterCnv {25};
     constexpr int dimeCnv {10};
     constexpr int nickelCnv {5};
-    constexpr int pennyCnv {1};
 
     const int dollars {cents / dollarCnv};
-    if (dollars > 0) cents %= dollarCnv;
+    cents %= dollarCnv;
 
     const int quarter {cents / quarterCnv};
-    if (quarter > 0) cents %= quarterCnv;
+    cents %= quarterCnv;
 
     const int dime {cents / dimeCnv};
-    if (dime > 0) cents %= dimeCnv;
+    cents %= dimeCnv;
 
     const int nickel {cents / nickelCnv};
-    if (nickel > 0) cents %= nickelCnv;
+    cents %= nickelCnv;
 
-    const int penny {cents / pennyCnv};
-    if (penny > 0) cents %= pennyCnv;
+    const int penny {cents };
 
     cout << "dollars: " << dollars << endl;
     cout << "quarter: " << quarter << endl;
