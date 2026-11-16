@@ -21,11 +21,14 @@ void beg() {
 
     if (const int randomNum {dist(gen)}; randomNum == 6 || randomNum == 7) {
         std::cout << '\n';
-        std::string cuteMessage = randomNum == 6 ? "PLEASE" : "IT HURTS WHEN YOU CLOSE";
 
-        for (int i {1}; i <= 1000; i++) {
-            std::cout << std::format("{}!!!   ", cuteMessage);
-            if (i % 10 == 0)
+        const std::string cuteMessage = randomNum == 6 ? "Please..." : "STOP!!! IT HURTS WHEN YOU CLOSE";
+        const int chop = randomNum == 6 ? 10 : 3;
+
+        for (int i {1}; i <= 500; i++) {
+            std::cout << std::format("{}   ", cuteMessage);
+
+            if (i % chop == 0)
                 std::cout << '\n';
         }
     }
