@@ -5,4 +5,5 @@ set(CMAKE_CXX_STANDARD 26)
 
 add_executable(casting src/main.cpp
         ../us_currency_chlg/src/main.cpp
+        ../mini_program_chlg/src/main.cpp
 )

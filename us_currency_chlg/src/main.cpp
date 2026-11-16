@@ -25,11 +25,11 @@ int main() {
     const int nickel {cents / nickelCnv};
     cents %= nickelCnv;
 
-    const int penny {cents };
+    const int penny {cents};
 
-    cout << "dollars: " << dollars << endl;
-    cout << "quarter: " << quarter << endl;
-    cout << "dime: " << dime << endl;
-    cout << "nickel: " << nickel << endl;
-    cout << "penny: " << penny << endl;
+    cout << "dollars: " << dollars << '\n';
+    cout << "quarter: " << quarter << '\n';
+    cout << "dime: " << dime << '\n';
+    cout << "nickel: " << nickel << '\n';
+    cout << "penny: " << penny << '\n';
 }
