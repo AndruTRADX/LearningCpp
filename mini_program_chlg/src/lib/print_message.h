@@ -7,5 +7,6 @@
 #include <string>
 
 void printdl(const std::string& message);
+void beg();
 
 #endif //LEARNCPP_PRINT_MESSAGE_H

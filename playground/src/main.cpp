@@ -2,7 +2,6 @@
 
 using namespace std;
 
-// Given the vector vec  to be {2, 4, 6, 8} , the possible pairs are (2,4), (2,6), (2,8), (4,6), (4,8), and (6,8) .
 int main() {
     const vector<int> vec {2, 4, 6, 8};
     int result {0};
