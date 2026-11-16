@@ -1,6 +1,7 @@
 #include <iostream>
 #include <thread>
 #include <random>
+#include <format>
 
 void printdl(const std::string& message) {
     std::cout << "\033[2J\033[H" << std::flush;
@@ -20,9 +21,10 @@ void beg() {
 
     if (const int randomNum {dist(gen)}; randomNum == 6 || randomNum == 7) {
         std::cout << '\n';
+        std::string cuteMessage = randomNum == 6 ? "PLEASE" : "IT HURTS WHEN YOU CLOSE";
 
-        for (int i {1}; i <= 100; i++) {
-            std::cout << "PLEASE   ";
+        for (int i {1}; i <= 1000; i++) {
+            std::cout << std::format("{}!!!   ", cuteMessage);
             if (i % 10 == 0)
                 std::cout << '\n';
         }
