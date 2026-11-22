@@ -4,7 +4,7 @@
 #include <format>
 
 void printdl(const std::string& message) {
-    std::cout << "\033[2J\033[H" << std::flush;
+    std::cout << "\033[2J\033[H" << std::flush; // This cleans the console
 
     std::cout << "/*** ------------------------------- ***/" << '\n';
     std::cout << '\n' << message << '\n';

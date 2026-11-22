@@ -25,9 +25,7 @@ int main() {
                         printdl("There are no elements in the list");
                     else {
                         ostringstream message {};
-                        for (const int num : list) {
-                            message << num << " ";
-                        }
+                        for (const int num : list) { message << num << " "; }
                         printdl(message.str());
                     }
                 }
@@ -99,19 +97,19 @@ int main() {
                 }
                 break;
             case 'z': case 'Z':
-            {
-                if (list.empty())
-                    printdl("There are no elements in the list");
-                else {
-                    int sum {0};
-                    int sumSq {0};
+                {
+                    if (list.empty())
+                        printdl("There are no elements in the list");
+                    else {
+                        int sum {0};
+                        int sumSq {0};
 
-                    for (const int x : list) { sum += x; sumSq += x * x; }
+                        for (const int x : list) { sum += x; sumSq += x * x; }
 
-                    printdl(format("The sum of pairwise products {}!", (sum * sum - sumSq) / 2));
+                        printdl(format("The sum of pairwise products is {}!", (sum * sum - sumSq) / 2));
+                    }
                 }
-            }
-            break;
+                break;
             case 'q': case 'Q':
                 quit = true;
                 printdl("Don't leave, please... I BEG YOU, I CAN DO MORE THINGS!!!");
