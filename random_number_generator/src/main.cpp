@@ -5,7 +5,6 @@ int main() {
     constexpr int count {10};
     constexpr int min {1};
     constexpr int max {10};
-
     std::random_device rd; // No deterministic
     std::mt19937 gen {rd()}; // Mersenne Twister
 
